@@ -27,7 +27,7 @@ public class Task1_numberGame {
 
                     if (guess == randomNumber) {
                         System.out.println("Hurray, You won the game!!!!");
-                        System.out.println("Your Scaore is " + score);
+                        System.out.println("Your Score is " + score);
                         break;
                     } else if (guess > randomNumber) {
                         System.out.println("Generated number is lower, Try again!");
@@ -50,6 +50,7 @@ public class Task1_numberGame {
                     attempt--;
                     if (attempt == 0) {
                         System.out.println("Attempt limit exceeded\nPlease try again ");
+                        System.out.println("The correct number is: " + randomNumber);
                         break;
                     }
                     if (guess == randomNumber) {
@@ -63,7 +64,9 @@ public class Task1_numberGame {
                         System.out.println("Generated number is higher, Try again!");
                     }
 
+
                 }
+
 
             }
             count++;
