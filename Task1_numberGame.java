@@ -16,12 +16,19 @@ public class Task1_numberGame {
             System.out.println("Round " + count+ ", Begins!!!");
             System.out.println("Select the game mode");
             System.out.println("1. Unlimited attempts\n2. Limited attempts\n");
+
             int modeSelected = sc.nextInt();
+            while(modeSelected!=1 && modeSelected!=2){
+                System.out.println("Invalid selection. Please choose 1 for unlimited attempts or 2 for limited attempts");
+                modeSelected = sc.nextInt();
+            }
+
+            int score = 0;
+
             if (modeSelected == 1) {
-                int score = 0;
+                System.out.println("Round " + count+ ", Begins!!!");
                 while (true) {
                     System.out.println("Enter your guess: ");
-
                     int guess = sc.nextInt();
                     score++;
 
@@ -39,7 +46,8 @@ public class Task1_numberGame {
             }
 
             else if (modeSelected == 2) {
-                int score = 0;
+                System.out.println("Round " + count+ ", Begins!!!");
+               // int score = 0;
                 int attempt = 5;
                 while (true) {
                     System.out.println("Attempts Remaining: " + attempt);
@@ -63,15 +71,14 @@ public class Task1_numberGame {
                     } else {
                         System.out.println("Generated number is higher, Try again!");
                     }
-
-
                 }
 
-
+                }else {
+                System.out.println("Invalid input. Please enter valid input.");
+                break;
             }
             count++;
-
-
         }
+
     }
 }
