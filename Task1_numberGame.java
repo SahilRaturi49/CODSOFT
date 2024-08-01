@@ -47,7 +47,7 @@ public class Task1_numberGame {
 
             else if (modeSelected == 2) {
                 System.out.println("Round " + count+ ", Begins!!!");
-               // int score = 0;
+               
                 int attempt = 5;
                 while (true) {
                     System.out.println("Attempts Remaining: " + attempt);
