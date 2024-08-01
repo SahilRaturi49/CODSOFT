@@ -55,7 +55,7 @@ public class Task1_numberGame {
                     }
                     if (guess == randomNumber) {
                         System.out.println("Hurray, You won the game!!!!");
-                        System.out.println("Your Scaore is " + score);
+                        System.out.println("Your Score is " + score);
                         break;
                     } else if (guess > randomNumber) {
                         System.out.println("Generated number is lower, Try again!");
