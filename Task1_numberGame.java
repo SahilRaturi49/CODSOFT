@@ -13,7 +13,6 @@ public class Task1_numberGame {
             Random rand = new Random();
             int randomNumber = rand.nextInt(100) +1;
 
-            System.out.println("Round " + count+ ", Begins!!!");
             System.out.println("Select the game mode");
             System.out.println("1. Unlimited attempts\n2. Limited attempts\n");
 
@@ -26,7 +25,7 @@ public class Task1_numberGame {
             int score = 0;
 
             if (modeSelected == 1) {
-                System.out.println("Round " + count+ ", Begins!!!");
+               System.out.println("Round " + count+ ", Begins!!!");
                 while (true) {
                     System.out.println("Enter your guess: ");
                     int guess = sc.nextInt();
@@ -47,7 +46,7 @@ public class Task1_numberGame {
 
             else if (modeSelected == 2) {
                 System.out.println("Round " + count+ ", Begins!!!");
-               
+
                 int attempt = 5;
                 while (true) {
                     System.out.println("Attempts Remaining: " + attempt);
